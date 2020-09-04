@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".SignupActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_backgroud"
+
+
+            android:hint="Enter Phone Number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/number"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_backgroud"
+
+            android:hint="Enter password"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/registerbtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_backgroud"
+            android:padding="10dp"
+            android:text="Login" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/registerbtn"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Don't have an Account? Signup"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
